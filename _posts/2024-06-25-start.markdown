@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Cómo empezar con Markdown"
+date:   2024-06-25 10:00:00 -0800
+categories: markdown tutorial
+---
+
+Markdown es un lenguaje de marcado ligero que se utiliza ampliamente para formatear texto de manera sencilla y legible. Aquí te mostraremos algunos conceptos básicos para comenzar:
+
+## Encabezados
+
+Los encabezados en Markdown se crean precediendo el texto con uno o más símbolos `#`. Por ejemplo:
+
+```markdown
+# Encabezado de nivel 1
+## Encabezado de nivel 2
+### Encabezado de nivel 3

@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Explorando Jekyll y GitHub Pages"
+date:   2024-06-25 15:30:00 -0500
+categories: jekyll github-pages
+---
+
+¡Bienvenido a mi sitio web creado con Jekyll y hospedado en GitHub Pages!
+
+En este post, vamos a explorar cómo utilizar Jekyll junto con GitHub Pages para crear un sitio web estático de manera sencilla y efectiva.
+
+## ¿Qué es Jekyll?
+
+[Jekyll](https://jekyllrb.com/) es un generador de sitios estáticos escrito en Ruby. Permite crear sitios web rápidos y seguros sin necesidad de bases de datos ni servidores complejos. Es ideal para blogs, portfolios y sitios web personales.
+
+## Configuración inicial
+
+### Paso 1: Instalación de Jekyll
+
+Primero, asegúrate de tener Ruby y RubyGems instalados en tu sistema. Luego, instala Jekyll y Bundler con el siguiente comando:
+
+```bash
+gem install jekyll bundler
