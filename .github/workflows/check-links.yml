@@ -1,0 +1,33 @@
+name: Check Broken Links
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: |
+          bundle install
+          npm install html-proofer -g
+
+      - name: Build and Verify Links
+        run: |
+          bundle exec jekyll build --destination _site
+          htmlproofer ./_site --allow-hash-href --check-html --url-ignore "/#.*/"
+
+      - name: Upload Artifacts
+        if: success()
+        uses: actions/upload-artifact@v2
+        with:
+          name: site-artifacts
+          path: _site
